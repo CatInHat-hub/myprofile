@@ -1,51 +1,155 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;600&family=M+PLUS+Rounded+1c:wght@300;400;500&display=swap" rel="stylesheet">
     <title>Portfolio của [Tên của bạn]</title>
 </head>
 <body>
+    <!-- Background pattern -->
+    <div class="bg-pattern"></div>
+    
+    <!-- Floating cherry blossom petals -->
+    <div class="sakura-container" id="sakura"></div>
 
-    <header>
-        <h1>[Tên của bạn]</h1>
-        <p>[Chuyên ngành của bạn]</p>
+    <nav class="navigation">
+        <a href="#home" class="nav-link">Trang Chủ</a>
+        <a href="#about" class="nav-link">Giới Thiệu</a>
+        <a href="#projects" class="nav-link">Dự Án</a>
+        <a href="#contact" class="nav-link">Liên Hệ</a>
+    </nav>
+
+    <header id="home">
+        <div class="header-content">
+            <div class="japanese-text">ポートフォリオ</div>
+            <h1 class="fade-in">[Tên của bạn]</h1>
+            <p class="subtitle fade-in-delay">[Chuyên ngành của bạn]</p>
+            <div class="scroll-indicator">
+                <span>↓</span>
+            </div>
+        </div>
     </header>
 
-    <section id="about">
-        <h2>Giới Thiệu</h2>
-        <p>Xin chào! Tôi là [Tên của bạn], một [chuyên ngành] với đam mê và kinh nghiệm trong lĩnh vực [chủ đề chính của bạn]. Tôi tin rằng sự sáng tạo, sự đổi mới và sự cam kết là chìa khóa để tạo ra những sản phẩm và dịch vụ xuất sắc.</p>
-    </section>
-
-    <section id="projects">
-        <h2>Dự Án Nổi Bật</h2>
-
-        <div class="project">
-            <h3>[Tên Dự Án 1]</h3>
-            <p>[Thêm mô tả về dự án, mục tiêu, và vai trò của bạn]</p>
-            <a href="#">Link: [Nếu có]</a>
-        </div>
-
-        <div class="project">
-            <h3>[Tên Dự Án 2]</h3>
-            <p>[Thêm mô tả về dự án, mục tiêu, và vai trò của bạn]</p>
-            <a href="#">Link: [Nếu có]</a>
-        </div>
-
-        <div class="project">
-            <h3>[Tên Dự Án 3]</h3>
-            <p>[Thêm mô tả về dự án, mục tiêu, và vai trò của bạn]</p>
-            <a href="#">Link: [Nếu có]</a>
+    <section id="about" class="about-section">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-number">01</span>
+                <h2>Giới Thiệu</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Xin chào! Tôi là <strong>[Tên của bạn]</strong>, một <strong>[chuyên ngành]</strong> với đam mê và kinh nghiệm trong lĩnh vực <strong>[chủ đề chính của bạn]</strong>.</p>
+                    <p>Tôi tin rằng sự sáng tạo, đổi mới và cam kết là chìa khóa để tạo ra những sản phẩm xuất sắc. Phong cách làm việc của tôi lấy cảm hứng từ triết lý Nhật Bản: <em>"Kaizen"</em> - cải tiến liên tục mỗi ngày.</p>
+                </div>
+                <div class="about-decoration">
+                    <div class="circle-design"></div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- Thêm các phần khác như Kỹ Năng, Học Vấn, Kinh Nghiệm Làm Việc, Liên Hệ, và Phản Hồi từ Khách Hàng tại đây -->
+    <section id="projects" class="projects-section">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-number">02</span>
+                <h2>Dự Án Nổi Bật</h2>
+                <div class="divider"></div>
+            </div>
+            
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="card-image">
+                        <div class="placeholder-image">
+                            <span>Project 1</span>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>[Tên Dự Án 1]</h3>
+                        <p>[Thêm mô tả về dự án, mục tiêu, và vai trò của bạn]</p>
+                        <a href="#" class="btn-link">Xem Chi Tiết →</a>
+                    </div>
+                </div>
 
-    <footer>
-        <p>Email: [Địa chỉ email của bạn]</p>
-        <p>LinkedIn: <a href="[Link đến trang LinkedIn của bạn]">LinkedIn Profile</a></p>
-        <p>Portfolio Website: <a href="#">[Nếu có]</a></p>
+                <div class="project-card">
+                    <div class="card-image">
+                        <div class="placeholder-image">
+                            <span>Project 2</span>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>[Tên Dự Án 2]</h3>
+                        <p>[Thêm mô tả về dự án, mục tiêu, và vai trò của bạn]</p>
+                        <a href="#" class="btn-link">Xem Chi Tiết →</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="card-image">
+                        <div class="placeholder-image">
+                            <span>Project 3</span>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>[Tên Dự Án 3]</h3>
+                        <p>[Thêm mô tả về dự án, mục tiêu, và vai trò của bạn]</p>
+                        <a href="#" class="btn-link">Xem Chi Tiết →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills-section">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-number">03</span>
+                <h2>Kỹ Năng</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="85"></div>
+                    </div>
+                    <span>[Kỹ năng 1]</span>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="75"></div>
+                    </div>
+                    <span>[Kỹ năng 2]</span>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="90"></div>
+                    </div>
+                    <span>[Kỹ năng 3]</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="footer-content">
+            <div class="contact-info">
+                <h3>Liên Hệ</h3>
+                <p>Email: <a href="mailto:[Địa chỉ email của bạn]">[Địa chỉ email của bạn]</a></p>
+                <p>LinkedIn: <a href="[Link đến trang LinkedIn của bạn]" target="_blank">LinkedIn Profile</a></p>
+                <p>Website: <a href="#">[Nếu có]</a></p>
+            </div>
+            <div class="social-links">
+                <a href="#" class="social-icon">GitHub</a>
+                <a href="#" class="social-icon">Twitter</a>
+                <a href="#" class="social-icon">Facebook</a>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2024 [Tên của bạn]. All rights reserved.</p>
+                <p class="japanese-footer">ありがとうございました</p>
+            </div>
+        </div>
     </footer>
 
     <script src="script.js"></script>
